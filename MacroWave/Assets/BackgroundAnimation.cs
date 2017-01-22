@@ -6,6 +6,7 @@ public class BackgroundAnimation : MonoBehaviour {
 
     public Sprite background1;
     public Sprite background2;
+    public Sprite background3;
 
     private SpriteRenderer oppSprite;
 
@@ -23,7 +24,10 @@ public class BackgroundAnimation : MonoBehaviour {
             if(oppSprite.sprite == background1) {
                 oppSprite.sprite = background2;
             }
-            else {
+            else if(oppSprite.sprite == background2) {
+                oppSprite.sprite = background3;
+            }
+            else if(oppSprite.sprite == background3) {
                 oppSprite.sprite = background1;
             }
         }
