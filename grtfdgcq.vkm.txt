@@ -1,0 +1,44 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch Design-Jacob
+# Your branch is up-to-date with 'origin/Design-Jacob'.
+#
+# Changes to be committed:
+#	modified:   MacroWave/Assembly-CSharp.csproj
+#	modified:   MacroWave/Assets/Scripts/Attack.cs
+#	modified:   MacroWave/Assets/Scripts/Health.cs
+#	modified:   MacroWave/Library/CurrentLayout.dwlt
+#	modified:   MacroWave/Library/ScriptAssemblies/Assembly-CSharp.dll
+#	modified:   MacroWave/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
+#	modified:   MacroWave/Library/assetDatabase3
+#	modified:   MacroWave/Library/expandedItems
+#	modified:   MacroWave/Library/metadata/00/00000000000000002000000000000000
+#	modified:   MacroWave/Library/metadata/00/00000000000000003000000000000000
+#	modified:   MacroWave/Library/metadata/00/00000000000000004000000000000000
+#	modified:   MacroWave/Library/metadata/00/00000000000000004100000000000000
+#	modified:   MacroWave/Library/metadata/00/00000000000000005000000000000000
+#	modified:   MacroWave/Library/metadata/00/00000000000000005100000000000000
+#	modified:   MacroWave/Library/metadata/00/00000000000000006000000000000000
+#	modified:   MacroWave/Library/metadata/00/00000000000000006100000000000000
+#	modified:   MacroWave/Library/metadata/00/00000000000000007000000000000000
+#	modified:   MacroWave/Library/metadata/00/00000000000000007100000000000000
+#	modified:   MacroWave/Library/metadata/00/00000000000000008000000000000000
+#	modified:   MacroWave/Library/metadata/00/00000000000000009000000000000000
+#	modified:   MacroWave/Library/metadata/00/0000000000000000a000000000000000
+#	modified:   MacroWave/Library/metadata/00/0000000000000000a100000000000000
+#	modified:   MacroWave/Library/metadata/00/0000000000000000b000000000000000
+#	modified:   MacroWave/Library/metadata/00/0000000000000000c000000000000000
+#	renamed:    MacroWave/Library/metadata/53/5392dae30fd3ade4f976e3db0efd9c1d -> MacroWave/Library/metadata/01/012009b31da63194e9958c557a92f14e
+#	renamed:    MacroWave/Library/metadata/53/5392dae30fd3ade4f976e3db0efd9c1d.info -> MacroWave/Library/metadata/01/012009b31da63194e9958c557a92f14e.info
+#	renamed:    MacroWave/Library/metadata/0a/0a2c70f4365e406459cbe99a032ed87c -> MacroWave/Library/metadata/1d/1d2a093fc4c1b434e979f8aadc78e4cb
+#	renamed:    MacroWave/Library/metadata/0a/0a2c70f4365e406459cbe99a032ed87c.info -> MacroWave/Library/metadata/1d/1d2a093fc4c1b434e979f8aadc78e4cb.info
+#	modified:   MacroWave/Library/metadata/56/56493c6073e6da842945311d790256d7.info
+#	modified:   MacroWave/Library/metadata/6c/6cc3ba0a3435ad3438d4887c95403994.info
+#	modified:   MacroWave/Library/metadata/6d/6d44100ca35e4184f8e150013c069e03.info
+#	modified:   MacroWave/Library/metadata/86/867b22c4eb142f842b2f712170ae0ef6
+#	modified:   MacroWave/Library/metadata/99/9983e8f3421723e458a9600ced1dfdda
+#	modified:   MacroWave/Library/metadata/ca/ca081163a0567a14bbac97d42ebb0a51.info
+#	modified:   MacroWave/MacroWave.sln
+#
+
