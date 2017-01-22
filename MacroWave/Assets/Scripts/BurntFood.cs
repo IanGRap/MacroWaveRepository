@@ -14,9 +14,9 @@ public class BurntFood : MonoBehaviour {
 
 	}
 
-	void OnTriggerEnter(Collider other){
+	void OnTriggerEnter2D(Collider2D other){
 		Debug.Log ("Working");
-		if (other.gameObject.tag == "enemy") {
+		if (other.gameObject.tag.CompareTo("enemy") == 0) {
 			Destroy (other.gameObject);
 			Destroy (gameObject);
 		}

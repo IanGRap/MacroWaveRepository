@@ -18,7 +18,7 @@ public class CookingEventMaster : MonoBehaviour {
 
 	void Start(){
 		background = GetComponentInChildren <SpriteRenderer> ();
-		background.enabled = false;
+		//background.enabled = false;
 		cursor = GetComponentInChildren <CookingEventCursor> ();
 		for (int i = 0; i < EventBoxes.Length; i++) {
 			EventBoxes [i].SetSprite (false);

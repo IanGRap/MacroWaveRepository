@@ -75,20 +75,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Animations.cs" />
     <Compile Include="Assets\CookingEvent\Scripts\CookingEventBox.cs" />
     <Compile Include="Assets\CookingEvent\Scripts\CookingEventCursor.cs" />
     <Compile Include="Assets\CookingEvent\Scripts\CookingEventEndCollider.cs" />
     <Compile Include="Assets\CookingEvent\Scripts\CookingEventMaster.cs" />
     <Compile Include="Assets\CookingEvent\Scripts\CookingEventTester.cs" />
     <Compile Include="Assets\Scripts\Attack.cs" />
+    <Compile Include="Assets\Scripts\BurntFood.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
+    <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\StartButton.cs" />
     <Compile Include="Assets\Scripts\WaveController.cs" />
     <Compile Include="Assets\Scripts\followPlayer.cs" />
     <Compile Include="Assets\Scripts\grapeCluster_controller.cs" />
     <Compile Include="Assets\Scripts\grape_controller.cs" />
+    <Compile Include="Assets\Scripts\pizzaRoll_controller.cs" />
     <Compile Include="Assets\Scripts\pizza_controller.cs" />
     <Compile Include="Assets\Scripts\player_movement.cs" />
     <Compile Include="Assets\Scripts\rotation.cs" />
