@@ -9,7 +9,7 @@ public class CookingEventTester : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown("Jump") && !cookingEvent.CheckActive()) {
+		if (Input.GetButtonDown("Fire1") && !cookingEvent.CheckActive()) {
 			cookingEvent.Activate (speed);
 		}
 	}

@@ -82,6 +82,7 @@
     <Compile Include="Assets\CookingEvent\Scripts\CookingEventEndCollider.cs" />
     <Compile Include="Assets\CookingEvent\Scripts\CookingEventMaster.cs" />
     <Compile Include="Assets\CookingEvent\Scripts\CookingEventTester.cs" />
+    <Compile Include="Assets\EnemySpawner2.cs" />
     <Compile Include="Assets\Scripts\Attack.cs" />
     <Compile Include="Assets\Scripts\BurntFood.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />

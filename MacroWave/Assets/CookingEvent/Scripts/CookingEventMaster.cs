@@ -20,14 +20,15 @@ public class CookingEventMaster : MonoBehaviour {
 		background = GetComponentInChildren <SpriteRenderer> ();
 		//background.enabled = false;
 		cursor = GetComponentInChildren <CookingEventCursor> ();
-		for (int i = 0; i < EventBoxes.Length; i++) {
-			EventBoxes [i].SetSprite (false);
+        
+        for (int i = 0; i < EventBoxes.Length; i++) {
+            EventBoxes [i].SetSprite (false);
 		}
 	}
 
 	void Update(){
 		if (active) {
-			if (Input.GetButtonDown ("action")) {
+			if (Input.GetButtonDown ("Fire1")) {
 				CursorHit ();
 			}
 		}
