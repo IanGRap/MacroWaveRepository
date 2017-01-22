@@ -37,10 +37,11 @@ public class Attack : MonoBehaviour
             }
         }
     }
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (hungry)
         {
+            Debug.Log("IM HUNGRY");
             held = other.gameObject;
             Destroy(other.gameObject);
             full = true;
@@ -52,6 +53,7 @@ public class Attack : MonoBehaviour
         else
         {
             //call get hurt script
+            Debug.Log("take health");
             life.takeHealth(1);
         }
     }
