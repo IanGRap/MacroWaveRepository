@@ -1,17 +1,16 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Attack : MonoBehaviour {
 
-    public GameObject Michael;
-    public int speed;
+    public object Michael;
     bool full = false;
-    bool hungry = false;
-    public Rigidbody2D body;
 
-    // Use this for initialization
-    void Start () {
-        body = GetComponent<Rigidbody2D>();
-    }
+	// Use this for initialization
+	void Start () {
+		
+	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -19,30 +18,8 @@ public class Attack : MonoBehaviour {
         {
             if (!full)
             {
-                var target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
-                hungry = true;
-                if (transform.position == target)
-                {
-                    hungry = false;
-                }
+                transform.Translate(Input.mousePosition);
             }
         }
 	}
-    void OnTriggerEnter(Collider other)
-    {
-        if (hungry)
-        {
-            object held = other.gameObject;
-            Destroy(other.gameObject);
-            full = true;
-            transform.position = transform.position;
-            hungry = false;
-            //call QTE script
-        }
-        else
-        {
-            //call get hurt script
-        }
-    }
 }
