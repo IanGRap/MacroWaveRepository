@@ -28,6 +28,7 @@ public class Attack : MonoBehaviour
             {
                 var target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
+				Debug.Log ("Player @ " + transform.position + ", Mouse @: " + target);
                 hungry = true;
                 if (transform.position == target)
                 {
