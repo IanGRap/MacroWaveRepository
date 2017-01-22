@@ -26,7 +26,7 @@ public class player_movement : MonoBehaviour {
 		var movement = new Vector3 (moveHorizontal, moveVertical, 0);
 		transform.position += movement * speed; 
 
-		body.position = new Vector3
+		transform.position = new Vector3
 		(
 			Mathf.Clamp (body.position.x, boundary.xMin, boundary.xMax),
 			Mathf.Clamp (body.position.y, boundary.yMin, boundary.yMax),
