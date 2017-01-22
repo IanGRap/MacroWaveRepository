@@ -76,10 +76,12 @@ public class CookingEventMaster : MonoBehaviour {
 			//heal player
 			Debug.Log ("Green");
             life.gainHealth(1);
+            life.score += 1;
 		} else if (cursorStatus == "red") {
 			//fire enemy as projectile
 			Debug.Log ("Red");
             var objectPos = Camera.current.ScreenToWorldPoint(Input.mousePosition);
+            life.score += 1;
             // might not work
             GameObject shot = Instantiate(burnt, objectPos, Quaternion.identity);
             shot.transform.position = Vector3.MoveTowards(shot.transform.position, objectPos, shotspeed * Time.deltaTime);
@@ -93,6 +95,7 @@ public class CookingEventMaster : MonoBehaviour {
 	public void MissedCursor(){
         //Whatever happens if the cursor runs of the end without being hit
         var objectPos = Camera.current.ScreenToWorldPoint(Input.mousePosition);
+        life.score += 1;
         // might not work
         GameObject shot = Instantiate(burnt, objectPos, Quaternion.identity);
         shot.transform.position = Vector3.MoveTowards(shot.transform.position, objectPos, shotspeed * Time.deltaTime);
