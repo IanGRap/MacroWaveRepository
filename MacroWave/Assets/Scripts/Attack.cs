@@ -1,13 +1,17 @@
-﻿using UnityEngine;
+﻿using Application;
+using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
 
     public GameObject Michael;
     public int speed;
-    bool full = false;
+    public bool full = false;
+    public GameObject held;
     bool hungry = false;
     public Rigidbody2D body;
+    public CookingEventMaster cook;
+    public Health life;
 
     // Use this for initialization
     void Start()
@@ -36,16 +40,18 @@ public class Attack : MonoBehaviour
     {
         if (hungry)
         {
-            object held = other.gameObject;
+            held = other.gameObject;
             Destroy(other.gameObject);
             full = true;
             transform.position = transform.position;
             hungry = false;
             //call QTE script
+            cook.Activate(10);
         }
         else
         {
             //call get hurt script
+            life.takeHealth(1);
         }
     }
 }
