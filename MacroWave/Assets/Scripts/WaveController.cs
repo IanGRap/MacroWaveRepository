@@ -9,22 +9,22 @@ namespace Application
     {
         private int waveCount;
         private bool activeWave;
-        private GameObject[] Spawners; //List that holds all enemy spawners
+        //private GameObject[] Spawners; //List that holds all enemy spawners
 
         void Start()
         {
-            Spawners = GameObject.FindObjectsOfType("EnemySpawner"); //NEED SPAWNER PREFAB
+            //Spawners = GameObject.FindObjectsOfType("EnemySpawner"); //NEED SPAWNER PREFAB
             waveCount = 0;
             activeWave = false;
         }
 
         void update()
         {
-            foreach (GameObject spawner in Spawners)
+           // foreach (GameObject spawner in Spawners)
             {
-                if (spawner.active)
+                //if (spawner.active)
                 {
-                    waveCount++;
+                    //waveCount++;
                 }
             }
         }
