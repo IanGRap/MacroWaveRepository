@@ -22,7 +22,7 @@ public class EnemySpawner2 : MonoBehaviour {
 	void Update () {
         if(timer % spawnTimer == 0) {
             //Spawn an enemy and have them move to the landing
-            var theEnemy = Instantiate(enemies[0], transform.position, transform.rotation);
+            var theEnemy = Instantiate(enemies[Random.Range(0, enemies.Length)], transform.position, transform.rotation);
             theEnemy.GetComponent<pizza_controller>().landing = landingPoints[Random.Range(0, landingPoints.Length)];
         }
 
