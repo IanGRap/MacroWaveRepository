@@ -26,6 +26,8 @@ public class Animations : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        chewing = player.GetComponent<Attack>().full;
+
         if (Input.GetKeyDown(KeyCode.Space)) {
             chewing = !chewing;
             if (chewing) {
