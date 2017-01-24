@@ -11,6 +11,7 @@ public class GameOver : MonoBehaviour {
     // vars
 
     public Health HPscript;
+    public player_movement Movescript;
 	private bool gitgud;
 	private bool pause;
 	private float alpha;
@@ -30,8 +31,6 @@ public class GameOver : MonoBehaviour {
 		c.a = alpha;
 		black.material.color = c;
 
-        //
-        HPscript.HP = 0;
 	}
 
 	void Update () {
@@ -40,19 +39,21 @@ public class GameOver : MonoBehaviour {
 			if (!pause) {
 				pause_start = Time.time;
 				pause_end = pause_start + pause_time;
-				//pause the game before fading to black
-				//this does not work since it messes with the time and time is needed for the fading
-				//I don't think we need it to pause when the player dies
-				//Time.timeScale = 0;
+                //pause the game before fading to black
+                //this does not work since it messes with the time and time is needed for the fading
+                //I don't think we need it to pause when the player dies
+                //Time.timeScale = 0;
+                Movescript.speed = 0;
 				Debug.Log("in pause");
 				pause = true;
 			}
 			if (pause_end < Time.time){
+
 				fade_time += Time.deltaTime;
 				//need to tweek the values for the fade as it fades in too fast
 				if (fade_time > 0.9f){
 					
-					alpha += 10f;
+					alpha += 0.2f;
 					fade_time = 0;
 				}
 				c = black.material.color;
