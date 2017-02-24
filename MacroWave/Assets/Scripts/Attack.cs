@@ -8,7 +8,7 @@ public class Attack : MonoBehaviour
     public int speed;
     public bool full = false;
     public GameObject held;
-    bool hungry = false;
+    public bool hungry = false;
     public Rigidbody2D body;
     public CookingEventMaster cook;
     public Health life;
@@ -27,7 +27,7 @@ public class Attack : MonoBehaviour
             if (!full)
             {
                 var target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
+                Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
 				Debug.Log ("Player @ " + transform.position + ", Mouse @: " + target);
                 hungry = true;
                 if (transform.position == target)
@@ -48,7 +48,7 @@ public class Attack : MonoBehaviour
             transform.position = transform.position;
             hungry = false;
             //call QTE script
-            cook.Activate(10);
+            GetComponent<Cooking>().cooking = true;
         }
         else
         {
