@@ -13,14 +13,19 @@ public class FireballMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position += transform.up * Time.deltaTime * movementSpeed;
+        if (transform.position.x > -30 && transform.position.x < 30 && transform.position.y > -30 && transform.position.y < 30) {
+            transform.position += transform.up * Time.deltaTime * movementSpeed;
+        }
+        else {
+            Destroy(this.gameObject);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.tag == "enemy") {
             Destroy(other.gameObject);
             GameObject.FindGameObjectWithTag("Player").GetComponent<Score>().score+=2;
-            Destroy(this.gameObject);
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<EnemyCounter>().activeEnemies--;
         }
     }
 }

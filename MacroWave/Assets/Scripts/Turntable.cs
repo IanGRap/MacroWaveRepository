@@ -22,9 +22,4 @@ public class Turntable : MonoBehaviour {
         }
         Sona.Play();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

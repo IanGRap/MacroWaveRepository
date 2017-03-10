@@ -21,10 +21,14 @@ public class Animations : MonoBehaviour {
 
     private int animator = 0;
 
+    private Vector3 offset;
+
     // Use this for initialization
     void Start () {
         oppSprite = GetComponent<SpriteRenderer>();
         oppSprite.sprite = openMouth1;
+
+        offset = transform.position;
     }
 	
 	// Update is called once per frame
@@ -79,11 +83,14 @@ public class Animations : MonoBehaviour {
         else {
             if (chewing == true) {
                 vibrator = Random.insideUnitCircle * 0.1f;
-                transform.position = player.transform.position + new Vector3(vibrator.x, vibrator.y, 0);// Random.insideUnitCircle * 0.1f;
+                transform.localPosition = new Vector3(vibrator.x + offset.x, vibrator.y + offset.y, 0);// Random.insideUnitCircle * 0.1f;
                                                                                                         //Make the animation change instantly
                 if(oppSprite.sprite != closeMouth1 || oppSprite.sprite != closeMouth2) {
                     animator = 19;
                 }
+            }
+            else {
+                transform.localPosition = offset;
             }
             if (player.GetComponent<DashAttack>().recharging) {
                 if (oppSprite.sprite != recharging1 || oppSprite.sprite != recharging2) {

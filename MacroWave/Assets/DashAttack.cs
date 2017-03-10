@@ -106,7 +106,6 @@ public class DashAttack : MonoBehaviour {
         dashState = "";
         currentDashSpeed = 0;
         recharging = true;
-
         //Begin the cooldown
     }
 }
